@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Final</title>
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-image">
+      <!-- <img class="login-image" src="images/login-image.jpg" alt="image"> -->
+    </div>
+    <div class="login-container vertical-flex">
+      <div class="login-title vertical-flex">
+        <h1 class="log-tlt">Smartacademy</h1>
+        <p class="log-txt">Welcome back! Please login to your account.</p>
+      </div>
+      <div id="error"></div>
+      <form id="form" action="/" method="GET">
+        <div class="name-input">
+          <input id="name" name="name" type="text" placeholder="Username" required>
+        </div>
+        <div class="pass-input">
+          <input id="password" name="password" type="password" placeholder="Password" required>
+        </div>
+        <div class="rem-input">
+          <div class="remember-me">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe">
+            <label class="rem" for="rememberMe">Remember me</label>
+          </div>
+          <label class="forgot" for="rememberMe">Forgot Password</label>
+        </div>
+        <div class="buttons">
+          <button class="login-btn" type="login">Login</button>
+          <button class="sign-btn" type="signup">Sign up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

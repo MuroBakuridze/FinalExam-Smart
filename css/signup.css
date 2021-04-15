@@ -7,6 +7,8 @@
 .main-container{
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  height: 100%;
 }
 .left-image{
   width: 50%;
@@ -15,6 +17,7 @@
   background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+  display: flex;
 }
 .login-container{
   width: 50%;
@@ -35,55 +38,12 @@
 .log-txt:hover{
   color:#4D4F5C;
 }
-.name-input{
-  padding: 5px;
-  margin-top: 20px;
-}
-.pass-input{
-  padding: 5px;
-  margin-top: 44px;
-}
-.rem-input{
-  font-family: 'Source Sans Pro';
-  padding: 5px;
-  margin-top: 44px;
-}
-.forgot{
-  font-family: 'Source Sans Pro';
-}
 .buttons{
   padding: 5px;
   margin-top: 44px;
-}
-#name,#password{
-font-family: 'Source Sans Pro';
-font-size: 15px;
-border-top: none;
-border-left: none;
-border-right: none;
-width: 400px;
-height: 25px;
-border-bottom: 2px solid #E9E9F0;
-padding: 20px 10px;
-}
-.rem-input{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.buttons{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.login-btn{
-font-family: 'Source Sans Pro';
-color: #4D4F5C;
-font-size: 18px;
-border-radius: 4px;
-border: 1px solid #43425D;
-padding: 15px 60px;
-background-color: #FFFFFF;
+  justify-content: center;
 }
 .sign-btn{
   font-family: 'Source Sans Pro';
@@ -98,30 +58,67 @@ background-color: #FFFFFF;
   background-color:#43425D;
   color: #FFFFFF;
 }
-.login-btn:hover{
-  background-color:#43425D;
-  color: #FFFFFF;
-}
-.rem, .forgot{
+
+#name,#first-name,#last-name,#email,#password,#confirm{
+  font-family: 'Source Sans Pro';
   font-size: 15px;
-  color: #4D4F5C;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 400px;
+  height: 25px;
+  border-bottom: 2px solid #E9E9F0;
+  padding: 20px 10px;
+  }
+#first-name,#last-name{
+  width: 187px;
 }
-#error{
-  border-radius: 4px;
-  padding: 2px;
-  color:#cf0808;
-  margin-top: 5px;
+.names{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.user-data,.email-input,.pass-input,.confirm-input{
+  margin-top: 20px;
+}
+.confirm-input{
+  margin-bottom: 40px;
+}
+.agr{
+  padding-left: 10px;
+  font-family: 'Source Sans Pro';
+}
+.already-have{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.alr-txt{
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  text-decoration: underline;
+  color: #43425D;
 }
 .terms{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 400px;
   height: 20px;
 }
 .trm-txt{
   font-family: 'Source Sans Pro';
   font-size: 11px;
-  padding-top: 200px;
+  padding-top: 120px;
   color: #43425D;
+}
+#error{
+  border-radius: 4px;
+  padding: 2px;
+  color:#cf0808;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

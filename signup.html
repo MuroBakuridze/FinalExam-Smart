@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/font.css">
+  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <title>Sign up</title>
+  <script defer src="./signup.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-image">
+    </div>
+    <div class="login-container vertical-flex">
+      <div class="login-title vertical-flex">
+        <h1 class="log-tlt">Smartacademy</h1>
+        <p class="log-txt">Please complete to create your account.</p>
+      </div>
+      <form action="/" class="form" id="form">
+        <div id="error"></div>
+        <div class="names">
+          <input id="first-name" name="first-name" type="text" placeholder="First name" required>
+          <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+        </div>
+        <div class="user-data vertical-flex">
+          <div class="name-input">
+            <input id="name" name="name" type="text" placeholder="Username" required>
+          </div>
+          <div class="email-input">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="pass-input">
+            <input id="password" name="password" type="password" placeholder="Password" required>
+          </div>
+          <div class="confirm-input">
+            <input id="confirm" name="confirm" type="password" placeholder="Confirm Password" required>
+          </div>
+        </div>
+        <div class="agree">
+          <div class="agree-terms">
+            <input type="checkbox" value="i-agree-terms" id="agreement">
+            <label class="agr" for="agreed">I agree with terms and conditions</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button id="sign-up" class="sign-btn" type="signup">Sign up</button>
+        </div>
+        <div class="already-have">
+          <a href="./index.html">
+            <p class="alr-txt">Already have an account? Sign in.</p>
+          </a>
+        </div>
+      </form>
+      <div class="terms">
+        <a href="#">
+          <p class="trm-txt">Term of use. Privacy policy</p>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>

@@ -5,9 +5,27 @@ const errorElement = document.getElementById('error')
 const signup = document.getElementById('sign-up')
 const login = document.getElementById('login')
 
+// let log = function () {
+//   window.location.href="./main.html"}
+
+  // let log = login.addEventListener('submit', () =>{
+  //   window.location.href="./main.html"
+  // })
+
+function clearValue() {
+    password.value = ''
+  }
+  
+signup.onclick = function () {
+    window.location.href="./signup.html"
+  }
+
+  
 
 form.addEventListener('submit', (e) => {
   let messages = []
+ 
+
   if (username.value === '' || username.value == null) {
     messages.push('Username is required')
   }
@@ -25,22 +43,22 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     errorElement.innerText = messages.join(', ')
   }
-  if(messages.length == ''){
-    e.preventDefault()
-    login.onclick = log
+
+  // if(messages.length <= 0 || messages.length == null){
+  //   e.preventDefault()
+  //   login.onclick = log
+  //   console.log('shet')
+  // }
+  if (password.value.length >=8 && password.value.length <=20){
     
+    login.addEventListener('click', () =>{
+      location.href="./main.html"
+    })
+    // login.onclick = log
+    e.preventDefault()
   }
 
 })
 
-function clearValue() {
-  password.value = ''
-}
-
-signup.onclick = function () {
-  window.location.href="./signup.html"
-}
 
 
-let log = function () {
-  window.location.href="./main.html"}

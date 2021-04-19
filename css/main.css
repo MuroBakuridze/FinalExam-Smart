@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  height: 100vh;
+}
+body{
+  background-color: #F0F0F7;
 }
 .head{
+  width: 85%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding: 15px 20px;
+  background: #ffffff;
 }
 .icons{
   display: flex;
@@ -25,24 +31,124 @@
 }
 .data-container{
   display: flex;
-  width: 100%;
-  padding-bottom: 97px;
+  width: 85%;
+  height: 100vh;
   flex-direction: column;
   background-color: #F0F0F7;
   align-items: flex-end;
 }
 .right-side{
   display: flex;
-  width: 84%;
+  width: 100%;
   flex-direction: column;
+  padding-left: 75px;
+  padding-right: 80px;
 }
 .todo-title{
   font-family: 'Source Sans Pro';
   font-size: 28px;
-  margin: 30px 0 65px;
+  margin: 30px 0 75px;
 }
 .data-box{
   height: 627.51px;
-  margin-right: 80px;
   background-color: #ffffff;
+}
+.navigation{
+  position: fixed;
+  top: 70px;
+  left: -15%;
+  width: 15%;
+  height: 100%;
+  background: #43425D;
+}
+.navigation ul{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+.navigation ul li:hover{
+  background: #2F2E50;
+}
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.navigation ul li a .icon .icon-img{
+  font-size: 15px;
+  font-family: 'Source Sans Pro';
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+.toggle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #43425D;
+}
+.toggle:hover{
+  background:#2F2E50 ;
+}
+.nav-tlt{
+  font-family: 'Source Sans Pro Bold';
+  font-size: 15px;
+  color: #fff;
+}
+.nav-icon{
+  cursor: pointer;
+}
+.nav-icon:hover{
+  border: 1px solid #a70953;
+}
+
+.show{
+ left: 0;
+}
+
+
+.navigation>ul>li:hover #Path_357{
+  fill: #A3A0FB;
+  transition: ease-in 0.1s all;
+}
+.navigation>ul>li:hover #Union_8{
+  fill: #A3A0FB;
+  transition: ease-in 0.1s all;
+}
+.navigation>ul>li:hover #Union_9{
+  fill: #A3A0FB;
+  transition: ease-in 0.1s all;
+}
+.navigation>ul>li:hover #Path_108{
+  fill: #A3A0FB;
+  transition: ease-in 0.1s all;
 }

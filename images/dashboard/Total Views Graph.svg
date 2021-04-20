@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1099.805" height="173.309" viewBox="0 0 1099.805 173.309">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#54d8ff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Total_Views_Graph" data-name="Total Views Graph" transform="translate(-325 -384)">
+    <path id="Filled.Graph" d="M330,490.153V354.422S452.674,489.367,553.446,494.445C665.882,493.3,666.8,424.39,765.605,386.665c82.714-29.621,145.829,51.18,215.017,53.151s116.936-55.378,211.328-59.362c122.3,6,220.43,82.62,228.045,86.74V523.21l-1090,.1Z" transform="translate(0.005 34)" opacity="0.7" fill="url(#linear-gradient)"/>
+    <path id="Line.Graph" d="M312.953,279.164S439.445,416.6,538.3,417.881s132.665-80.975,212.041-108.707,148.235,52.9,214.506,53.91,129.722-60.576,211.149-58.9,174.525,48.262,225.993,85.012" transform="translate(18.006 110)" fill="none" stroke="#54d8ff" stroke-width="2"/>
+    <g id="Jun.Ellipse" transform="translate(1414.816 495)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+    <g id="May.Ellipse" transform="translate(1186.645 409)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+    <g id="Apr.Ellipse" transform="translate(975.488 468)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+    <g id="Mar.Ellipse" transform="translate(762.327 414)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+    <g id="Feb.Ellipse" transform="translate(549.169 523)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+    <g id="Jan.Ellipse" transform="translate(325 384)" fill="#fff" stroke="#55d8fe" stroke-width="2">
+      <circle cx="4.995" cy="4.995" r="4.995" stroke="none"/>
+      <circle cx="4.995" cy="4.995" r="3.995" fill="none"/>
+    </g>
+  </g>
+</svg>

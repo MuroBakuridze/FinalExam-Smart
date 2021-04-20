@@ -44,21 +44,21 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = messages.join(', ')
   }
 
-  // if(messages.length <= 0 || messages.length == null){
-  //   e.preventDefault()
-  //   login.onclick = log
-  //   console.log('shet')
-  // }
+  
   if (password.value.length >=8 && password.value.length <=20){
-    
+
     login.addEventListener('click', () =>{
       location.href="./main.html"
+      
     })
-    // login.onclick = log
     e.preventDefault()
+    
   }
 
 })
 
 
+function redirect(){
+  window.location = "./main.html"
+}
 

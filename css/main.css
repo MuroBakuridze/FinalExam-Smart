@@ -153,54 +153,118 @@ body{
   transition: ease-in 0.1s all;
 }
 
-/* table */
-.table-section{
-	width: 100%;
-    margin-top: 140px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+/* pagination table */
+.table-tlt{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
-.teble-content{
-	width: 100%;
-	padding: 20px 12%;
-/*	overflow: scroll;*/
+.tb-tlt{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
 }
-.table{
-	width: 100%;
-	border-collapse: collapse;
+.mid{
+  padding-left: 20px;
 }
-.table td, .table th{
-	padding: 20px 50px;
-	border-bottom: 1px solid #E7E7E7;
-	text-align: left;
-	font-family: 'Metropolis';
-	font-size: 16px;
-}
-.table thead:hover{
-	background-color: #F2F2F2;
-	color: #FF2288;
-}
-.table tbody tr:hover{
-	background-color: #F2F2F2;
-	color: #FF2288;
-}
-#order{
-	padding-left: 0;
-}
-.pagination-btns{
+.pagination {
+  min-width: 300px;
   width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px;
+}
+.pagination .tableList {
+    min-height: 250px;
+    text-indent: 20px;
+    width: 100%;
+}
+.tableList .objectBlock {
+    position: relative;
+    color: rgb(14, 13, 13);
+    padding: 10px;
+    margin-bottom: 10px;
+  
+}
+.pageButton {
+    border: 1px solid #E8E9EC;
+    padding: 5px;
+    background-color: white;
+}
+#button_prev{
+  background-color:#fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.pag-a{
-  text-decoration: none;
-  padding: 15px;
-  background-color: #FF2288;
-  color:white;
-  margin: 5px;
+#button_prev:hover{
+  background-color: #161516;
+}
+#button_next{
+  background-color:#fff;
+  width: 35px;
+  height: 35px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+#button_next:hover{
+  background-color: #161516;
+}
+.clickPageNumber {
+  border: 1px solid #E8E9EC;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 10px 12px;
+  margin: 0 2px 0 2px;
+}
+.clickPageNumber:hover{
+  background-color: #3B86FF;
+}
+.page_number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-block {
+ display: flex;
+ justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+}
+.pagination-block span {
+  display: inline-block;
+}
+.pagination-block .pageButton {
+  background-color: grey;
+  color: white;
+}
+.pagination-block span:hover {
+  cursor: pointer;
+}
+.opacity {
+  opacity: 0.5;
+}
+.outline-none {
+  outline: none;
+  user-select: none; 
+}
+.mro{
+display: flex;
+justify-content: space-between;
+width: 100%;
+height: 40px;
+align-items: center;
+border-bottom: 0.1px solid rgb(230, 221, 221);
+
 }

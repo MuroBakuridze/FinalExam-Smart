@@ -39,36 +39,25 @@
       <div class="right-side">
         <h1 class="todo-title">Todolist</h1>
         <div class="data-box">
-          <div class="table-section">
-            <div class="container teble-content"> 
-              <table class="table table-stripped">
-                <thead class="th">
-                
-                    <th>ID</th>
-                    <th>Title</th>
-                    <th>Completed</th>
-                  
-                </thead>
-                <tbody id="data">
-          
-                </tbody>
-              </table>
+          <div class="table-tlt">
+            <span class="tb-tlt">userId</span>
+            <span class="tb-tlt mid">title</span>
+            <span class="tb-tlt">completed</span>
+          </div>
+          <div class="pagination">
+            <div class="tableList" id="listingTable"></div>
+            <div class="pagination-block">
+              <span class="pageButton outline-none" id="button_prev">
+                <img src="./images/main/table/left.svg" alt="leftarrow">
+                <!-- Prev -->
+              </span>
+              <span id="page_number" class="outline-none"></span>
+              <span class="pageButton outline-none" id="button_next">
+                <img src="./images/main/table/right.svg" alt="leftarrow">
+                <!-- Next -->
+              </span>
             </div>
           </div>
-          <div class="pagination-btns">
-            <a class="pag-a" href="">Previous</a>
-            <a class="pag-a" href="">1</a>
-            <a class="pag-a" href="">2</a>
-            <a class="pag-a" href="">3</a>
-            <a class="pag-a" href="">4</a>
-            <a class="pag-a" href="">5</a>
-            <a class="pag-a" href="">Next</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="toggle" >
     <span class="nav-tlt">Smartacademy</span>
     <span class="nav-icon" id="btn">

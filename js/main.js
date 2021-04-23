@@ -8,6 +8,16 @@ let navCallFunc = function () {
 
 btn.addEventListener('click', navCallFunc);
 
+/////////////////////////////
+
+let downArrow = document.getElementById('down-arrow')
+let popUp = document.getElementById('pop')
+
+let popWindowCall = function () {
+    popUp.classList.toggle('scale')
+}
+ downArrow.addEventListener('click', popWindowCall)
+
 
 //////////////// modal ////////////////
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
@@ -73,9 +83,38 @@ function closeModal(modal) {
   })
   
      const objJson = [
-        {adName: "",
-        adTitle : "",
-        adCompleted: ""},
+        {adName: "1",
+        adTitle : "um debitis quis accusamus",
+        adCompleted: "false"},
+        {adName: "1",
+        adTitle : "um debitis quis accusamus",
+        adCompleted: "false"},
+        {adName: "1",
+        adTitle : "vel voluptatem repellat nihil placeat corporiss",
+        adCompleted: "false"},
+        {adName: "1",
+        adTitle : "sit reprehenderit omnis quia",
+        adCompleted: "true"},
+        {adName: "1",
+        adTitle : "distinctio exercitationem ab doloribus",
+        adCompleted: "true"},
+        {adName: "1",
+        adTitle : "qui labore est occaecati recusandae aliquid quam",
+        adCompleted: "false"},
+        {adName: "1",
+        adTitle : "et sequi qui architecto ut adipisci",
+        adCompleted: "true"},
+        {adName: "1",
+        adTitle : "odit optio omnis qui sunt",
+        adCompleted: "false"},
+        {adName: "1",
+        adTitle : "doloremque aut dolores quidem fuga qui nulla",
+        adCompleted: "true"},
+        {adName: "1",
+        adTitle : "voluptas consequatur qui ut quia magnam nemo esse",
+        adCompleted: "true"},
+
+
     ];
 
     

@@ -17,7 +17,7 @@ btn.addEventListener('click', navCallFunc);
   
   function Pagination() {
     
-    const resp = fetch("https://jsonplaceholder.typicode.com/todos ")
+    const resp = fetch("https://raw.githubusercontent.com/otariterterashvili/smartacademy-front/81addd9759f7c1cfb220f10d7bf74d861dbb85da/tasks.json")
 
   resp.then(function (response) {
     return response.json()

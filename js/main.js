@@ -9,6 +9,45 @@ let navCallFunc = function () {
 btn.addEventListener('click', navCallFunc);
 
 
+//////////////// modal ////////////////
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
+
 // - pagination js - //
 
 (function() {
@@ -90,9 +129,9 @@ btn.addEventListener('click', navCallFunc);
         listingTable.innerHTML = "";
 
         for(var i = (page -1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
-            listingTable.innerHTML += "<div class='mro'><div class='objectBlock'>" + objJson[i].adName + "</div>" +
-             "<div class='objectBlock'>" + objJson[i].adTitle + "</div>"+
-            "<div class='objectBlock'>" + objJson[i].adCompleted + "</div></div>";
+            listingTable.innerHTML += "<div class='mro'><div class='userId'>" + objJson[i].adName + "</div>" +
+             "<div class='userTitle'>" + objJson[i].adTitle + "</div>"+
+            "<div class='userComp'>" + objJson[i].adCompleted + "</div></div>";
         }
         checkButtonOpacity();
         selectedPage();

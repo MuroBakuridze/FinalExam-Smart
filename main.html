@@ -39,6 +39,45 @@
       <div class="right-side">
         <h1 class="todo-title">Todolist</h1>
         <div class="data-box">
+          <div class="todo-head">
+          <p class="all-todo">All todo</p>
+          <button class="add-btn" id="add-btn" type="button" data-modal-target="#modal">
+            <span class="adt">AddTodo</span>
+          </button>
+          <!-- <div class="after-add" id="after-add">
+            <div class="first">
+              <p class="add-td">Add todo</p>
+              <img src="./images/main/table/icon_close.svg" alt="close">
+            </div>
+            <div class="sec">
+              <p class="title-b">Title</p>
+            </div>
+            <div class="thrd">
+            <button class="save" type="button" ><span class="adt">save</span></button>
+          </div>
+          </div> -->
+
+
+
+          <div class="modal" id="modal">
+            <div class="modal-header">
+              <div class="title">
+                <p class="add-td">Add todo</p>
+              </div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p class="title-b">Title</p>
+            </div>
+            <div class="thrd">
+              <button class="save" type="button" ><span class="adt">save</span></button>
+            </div>
+          </div>
+          <div id="overlay"></div>
+
+
+
+          </div>
           <div class="table-tlt">
             <span class="tb-tlt">userId</span>
             <span class="tb-tlt mid">title</span>

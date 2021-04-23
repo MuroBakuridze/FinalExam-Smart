@@ -50,13 +50,13 @@ body{
   margin: 30px 0 75px;
 }
 .data-box{
-  height: 627.51px;
+  /* height: 627.51px; */
   background-color: #ffffff;
 }
 .navigation{
   position: fixed;
   top: 70px;
-  left: -15%;
+  left: 0;
   width: 15%;
   height: 100%;
   background: #43425D;
@@ -116,6 +116,9 @@ body{
   padding: 20px 30px;
   background: #43425D;
 }
+.show{
+  left: -15%;
+ }
 .toggle:hover{
   background:#2F2E50 ;
 }
@@ -131,9 +134,7 @@ body{
   border: 1px solid #a70953;
 }
 
-.show{
- left: 0;
-}
+
 
 
 .navigation>ul>li:hover #Path_357{
@@ -153,20 +154,72 @@ body{
   transition: ease-in 0.1s all;
 }
 
+
+
 /* pagination table */
+
+.add-td{
+  font-family: 'Source Sans Pro Bold';
+  font-size: 20px;
+}
+.title-b{
+  font-family: 'Source Sans Pro ';
+  font-size: 16px;
+}
+.save{
+  width: 100px;
+  height: 34px;
+  background-color: hsl(217, 76%, 67%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.adt{
+  font-family: 'Source Sans Pro Bold';
+  font-size: 12px;
+}
+.thrd{
+  display: flex;
+  justify-content: flex-end;
+}
+.todo-head{
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+  height: 50px;
+}
+.add-btn{
+  width: 125px;
+  height: 34px;
+  background-color: hsl(217, 76%, 67%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.adt{
+  color: white;
+}
+.all-todo{
+  font-family: 'Source Sans Pro ';
+  font-size: 18px;
+  display: flex;
+}
+
 .table-tlt{
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
 }
 .tb-tlt{
+  font-family: 'Source Sans Pro Bold';
+  font-size: 13px;
+  color: #A3A6B4;
   padding: 5px;
   display: flex;
   justify-content: center;
   padding-left: 20px;
 }
 .mid{
-  padding-left: 20px;
+  width: 30%;
+  justify-content: flex-start;
 }
 .pagination {
   min-width: 300px;
@@ -177,9 +230,32 @@ body{
   padding: 20px;
 }
 .pagination .tableList {
+    height: 450px;
     min-height: 250px;
     text-indent: 20px;
-    width: 100%;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.userTitle{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  font-family: 'Source Sans Pro';
+  font-size: 13px;
+}
+.userId{
+  font-family: 'Source Sans Pro';
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+.userComp{
+  font-family: 'Source Sans Pro';
+  font-size: 13px;
 }
 .tableList .objectBlock {
     position: relative;
@@ -266,5 +342,82 @@ width: 100%;
 height: 40px;
 align-items: center;
 border-bottom: 0.1px solid rgb(230, 221, 221);
-
+padding: 20px;
 }
+.mro:hover{
+  background-color: #dad2d2;
+}
+
+
+
+
+
+
+
+
+.modal {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 10px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+

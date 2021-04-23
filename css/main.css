@@ -351,9 +351,7 @@ padding: 20px;
 
 
 
-
-
-
+/* PopUp windows */
 
 
 .modal {
@@ -465,6 +463,9 @@ padding: 20px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
+  color:#4D565C;
 }
 .pop-add-td:hover{
   background-color: #3B86FF;
@@ -474,6 +475,9 @@ padding: 20px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  color: #4D565C;
+  font-family: 'Source Sans Pro';
+  font-size: 15px;
 }
 .acc-set:hover{
   background-color: #3B86FF;

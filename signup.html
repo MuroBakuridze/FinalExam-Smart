@@ -24,27 +24,29 @@
       <form action="/" class="form" id="form">
         <div id="error"></div>
         <div class="names">
-          <input id="first-name" name="first-name" type="text" placeholder="First name" required>
-          <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+          <input class="first-name" id="first-name" name="first-name" type="text" placeholder="First name" required>
+          <input class="last-name" id="last-name" name="last-name" type="text" placeholder="Last name" required>
         </div>
         <div class="user-data vertical-flex">
           <div class="name-input">
-            <input id="name" name="name" type="text" placeholder="Username" required>
+            <input class="name" id="name" name="name" type="text" placeholder="Username" required>
           </div>
           <div class="email-input">
-            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input class="email" type="email" id="email" name="email" placeholder="Email" required>
           </div>
           <div class="pass-input">
-            <input id="password" name="password" type="password" placeholder="Password" required>
+            <input class="password" id="password" name="password" type="password" placeholder="Password" >
+            <div class="pass-error" id="pass-error"></div>
           </div>
           <div class="confirm-input">
-            <input id="confirm" name="confirm" type="password" placeholder="Confirm Password" required>
+            <input class="confirm" id="confirm" name="confirm" type="password" placeholder="Confirm Password" >
+            <div class="confirm-error" id="confirm-error"></div>
           </div>
         </div>
         <div class="agree">
           <div class="agree-terms">
             <input type="checkbox" value="i-agree-terms" id="agreement">
-            <label class="agr" for="agreed">I agree with terms and conditions</label>
+            <label class="agr" for="agreement">I agree with terms and conditions</label>
           </div>
         </div>
         <div class="buttons">

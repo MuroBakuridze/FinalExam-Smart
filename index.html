@@ -23,24 +23,24 @@
       <div id="error"></div>
       <form id="form" action="/" method="GET">
         <div class="name-input">
-          <input id="name" name="name" type="text" placeholder="Username" required >
+          <input class="name" id="name" name="name" type="text" placeholder="Username">
+          <div class="user-error" id="user-error"></div>
         </div>
         <div class="pass-input">
-          <input id="password" name="password" type="password" placeholder="Password" required >
+          <input class="password" id="password" name="password" type="password" placeholder="Password">
+          <div class="pass-error" id="pass-error"></div>
         </div>
         <div class="rem-input">
           <div class="remember-me">
             <input type="checkbox" value="lsRememberMe" id="rememberMe">
             <label class="rem" for="rememberMe">Remember me</label>
           </div>
-          <label class="forgot" for="rememberMe">Forgot Password</label>
+          <label class="forgot" for="forgot">Forgot Password</label>
         </div>
         <div class="buttons">
-
-          <button id="login" class="login-btn" type="login" >
+          <button id="login" class="login-btn" type="login">
             Login
           </button>
-
           <button class="sign-btn" type="signup" id="sign-up">
             Sign up
           </button>
@@ -54,7 +54,7 @@
     </div>
   </div>
 
-<script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

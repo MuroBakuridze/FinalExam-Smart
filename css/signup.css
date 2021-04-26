@@ -53,15 +53,17 @@
   border: 1px solid #43425D;
   padding: 15px 60px;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .sign-btn:hover{
   background-color:#43425D;
   color: #FFFFFF;
 }
 
-#name,#first-name,#last-name,#email,#password,#confirm{
+.name,.first-name,.last-name,.email,.password,.confirm{
   font-family: 'Source Sans Pro';
-  font-size: 15px;
+  font-size: 24px;
+  color: #43425D;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -69,8 +71,23 @@
   height: 25px;
   border-bottom: 2px solid #E9E9F0;
   padding: 20px 10px;
+  outline: none;
   }
-#first-name,#last-name{
+::placeholder{
+    font-size: 15px;
+  }
+.error-ms{
+    border-bottom: 2px solid #FF6565;
+  }
+.pass-error,.confirm-error{
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    color: #FF6565;
+  }
+.first-name,.last-name{
   width: 187px;
 }
 .names{
@@ -79,7 +96,7 @@
   align-items: center;
   margin-top: 20px;
 }
-.user-data,.email-input,.pass-input,.confirm-input{
+.user-data,.email-input,.pass-input{
   margin-top: 20px;
 }
 .confirm-input{
@@ -88,6 +105,10 @@
 .agr{
   padding-left: 10px;
   font-family: 'Source Sans Pro';
+  cursor: pointer;
+}
+#agreement{
+  cursor: pointer;
 }
 .already-have{
   margin-top: 40px;

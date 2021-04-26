@@ -18,7 +18,9 @@
 }
 .login-container{
   width: 50%;
-
+}
+#rememberMe{
+  cursor: pointer;
 }
 .log-tlt{
   font-family: 'Source Sans Pro Bold';
@@ -55,9 +57,10 @@
   padding: 5px;
   margin-top: 44px;
 }
-#name,#password{
+.name,.password{
 font-family: 'Source Sans Pro';
-font-size: 15px;
+font-size: 24px;
+color: #43425D;
 border-top: none;
 border-left: none;
 border-right: none;
@@ -65,6 +68,21 @@ width: 400px;
 height: 25px;
 border-bottom: 2px solid #E9E9F0;
 padding: 20px 10px;
+outline:none ;
+}
+::placeholder{
+  font-size: 15px;
+}
+.error-ms{
+  border-bottom: 2px solid #FF6565;
+}
+.user-error,.pass-error{
+  height: 25px;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  color: #FF6565;
 }
 .rem-input{
   display: flex;
@@ -84,6 +102,7 @@ border-radius: 4px;
 border: 1px solid #43425D;
 padding: 15px 60px;
 background-color: #FFFFFF;
+cursor: pointer;
 }
 .sign-btn{
   font-family: 'Source Sans Pro';
@@ -93,6 +112,7 @@ background-color: #FFFFFF;
   border: 1px solid #43425D;
   padding: 15px 60px;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .sign-btn:hover{
   background-color:#43425D;
@@ -105,6 +125,7 @@ background-color: #FFFFFF;
 .rem, .forgot{
   font-size: 15px;
   color: #4D4F5C;
+  cursor: pointer;
 }
 #error{
   border-radius: 4px;

@@ -424,8 +424,8 @@ padding: 20px;
 
 .pop{
   position: fixed;
-  top: -25%;
-  right: 1%;
+  top: -200px;
+  right: 4%;
   margin-right : 50px;
   /* transform: translate(-50%, -50%) scale(0); */
   transition: 200ms ease-in-out;
@@ -443,7 +443,7 @@ padding: 20px;
 
 }
 .scale{
-  top:6%;
+  top: 50px;
 }
 .pop-header{
   height: 100%;
@@ -540,4 +540,44 @@ padding: 20px;
   .pagination{
     padding: 5px;
   }
+  .data-box{
+    height: 700px;
+  }
+  .right-side{
+    padding: 2px;
+  }
+  .table-tlt{
+    padding: 10px;
+  }
+  .pagination{
+    padding: 0;
+  }
+  .mro{
+    padding: 5px;
+    justify-content: space-around;
+    width: 90%;
+  }
+  .userTitle{
+    width: 100px;
+  }
+  .right-side{
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .right-side{
+    width: 100%;
+    padding: 0;
+  }
+  #add-btn{
+    width: 80px;
+  }
+ .main-container{
+   width: 260px;
+ }
+ 
+ 
+  
+ 
 }

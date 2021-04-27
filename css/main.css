@@ -8,7 +8,7 @@ body{
   background-color: #F0F0F7;
 }
 .head{
-  width: 85%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -57,9 +57,10 @@ body{
   position: fixed;
   top: 70px;
   left: 0;
-  width: 15%;
+  width: 260px;
   height: 100%;
   background: #43425D;
+  transition: 200ms ease-in-out;
 }
 .navigation ul{
   position: absolute;
@@ -95,9 +96,9 @@ body{
   font-size: 15px;
   font-family: 'Source Sans Pro';
 }
-.navigation ul li a .title {
+.navigation ul li a .nav-title {
   position: relative;
-  display: block;
+  /* display: block; */
   padding: 0 10px;
   height: 60px;
   line-height: 60px;
@@ -108,7 +109,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 15%;
+  width: 260px;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -118,7 +119,7 @@ body{
   transition: 200ms ease-in-out;
 }
 .show{
-  left: -15%;
+  left: -260px;
  }
 .toggle:hover{
   background:#2F2E50 ;
@@ -134,7 +135,6 @@ body{
 .nav-icon:hover{
   border: 1px solid #a70953;
 }
-
 
 
 
@@ -482,4 +482,62 @@ padding: 20px;
 .acc-set:hover{
   background-color: #3B86FF;
   color:#fff;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1350px){
+	.data-container{
+    width: 80%;
+  }
+  .right-side{
+    padding: 0 20px 0 60px;
+  }
+}
+
+@media screen  and (max-width: 1100px){
+  .navigation{
+    left: -260px;
+  }
+  .show{
+    left: 0;
+  }
+  .data-container{
+    width: 100%;
+  }
+  .right-side{
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-tlt{
+    display: none;
+  }
+  .toggle{
+    width: 90px;
+  }
+  .navigation{
+    width: 90px;
+  }
+  .nav-title{
+    display:none;
+  }
+  .icon{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .icons{
+    margin-right: 10px;
+  }
+  .user-name{
+    display: none;
+  }
+  .user{
+    width: 60px;
+  }
+  .pagination{
+    padding: 5px;
+  }
 }
